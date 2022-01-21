@@ -106,7 +106,6 @@ body {
     height: max-content;
     width: 300px;
     display: inline;
-    flex-shrink: 0;
 }
 
 .icon {
