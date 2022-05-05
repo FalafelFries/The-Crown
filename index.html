@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
     <title>The Crown</title>
 </head>
-
 <body>
-    <div class="index-page">
-        
 
-        <nav class="nav-container">
-            <a href="index.html"><img src="img/The Crown.png" alt="The Crown"width="200px"></a>
-            <ul>
-                <li><a class="current" href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>   
-        </nav> 
-        
-        <div class="desc">
-            <h1 id="main_heading">THE CROWN</h1>
+    <nav class="nav-container">
+        <div id="logo-container">
+            <a href="index.html">
+                <img src="img/The Crown Logo.png" alt="The Crown">
+                <div>the crown</div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>   
+    </nav>
+
+    <section class="sec" id="home">
+        <div id="hero-img">
+            <div id="main_heading">THE CROWN</div>
             <div id="tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deserunt blanditis asperiores!</div>
         </div>
+
         <div class="index-flex-container">
             <div class="tile1">
                 <div class="icon">
@@ -47,11 +50,96 @@
                 <div class="icon-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, iste</div>
             </div>        
         </div>
-        
-        
-    </div>
-    
-    
-</body>
+    </section>
+    <section class="sec" id="about">
+        <div id="about-below"></div>
 
+        <div id="about-content">
+
+        <div class="about-info">
+            <div class="about-img">
+                <img src="img/img (1).png" alt="">
+            </div>
+            <div class="about-desc">
+                <div class="about-desc-header">Lorem ipsum dolor sit accusamus ab nemo nulla</div>
+                <div class="about-desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, illo iste! Blanditiis nam accusantium deserunt sed explicabo. At autem similique praesentium sed possimus. Velit repellat accusantium ullam cupiditate quibusdam. Quidem, necessitatibus. Perspiciatis voluptas qui expedita voluptate, omnis iusto velit corporis quo, ad, molestiae accusamus id eos culpa accusantium esse quae?</div>
+            </div>
+        </div>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="img/img (4).png" alt="">
+            </div>
+            <div class="about-desc">
+                <div class="about-desc-header">Lorem ipsum dolor sit amet consectetur adipisicing elit officia recusandae</div>
+                <div class="about-desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint accusamus ab nemo nulla voluptate laborum dolores illum? Delectus, atque officia. Eos, nihil, excepturi dicta in libero odit veritatis facere numquam nulla soluta reprehenderit officia recusandae, hic eius deserunt? Beatae, delectus.</div>
+            </div>
+        </div>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="img/img (3).png" alt="">
+            </div>
+            <div class="about-desc">
+                <div class="about-desc-header">Lorem ipsum dolor recusandae, hic eius deserunt? Beatae, delectus</div>
+                <div class="about-desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis totam, quis cupiditate mollitia iure molestiae ullam? Eum qui, aliquam placeat, adipisci sunt delectus nesciunt molestias tenetur dolor consequuntur facere, impedit dicta rem iusto atque consequatur dolores et!</div>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+    <section class="sec" id="contact">
+        <div id="contact-header">
+            <div id="header-text">contact us</div>
+            <div id="tagline2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam deserunt delectus dignissimos tenetur?</div>
+        </div>
+        <div id="contact-content">
+            <div id="tip"></div>
+            <div id="contact-form">
+                <form action="#">
+                    <div class="form-field">
+                            <input type="text" placeholder="Name"/>
+                            <!-- <label>Name</label>  -->
+                    </div>
+                    <div class="form-field">
+                            <input type="text" placeholder="Email"/>
+                            <!-- <label>Email</label>  -->
+                    </div>
+                    <div class="form-field">
+                            <textarea placeholder="Message"></textarea>
+                            <!-- <label>Message</label> -->
+                    </div>
+                    <div class="form-field">
+                        <div class="btn">Send Message</div>
+                    </div>
+                </form>
+            </div>
+            <div id="contact-map">
+                
+                <!-- <div id="map"></div> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95587.57024906254!2d-76.60386572491387!3d44.26744001080778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ab0674408ea9%3A0x76a5497715d6d9ea!2sKingston%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1651691766219!5m2!1sen!2sin" width="100%" height="205px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="info-container">
+                    <div class="info">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="info-icon-desc">45th Avenue Kingston, Ontario</div>
+                    </div>
+                    <div class="info">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="info-icon-desc">(555) 555-5555</div>
+                    </div>
+                    <div class="info">
+                        <div class="info-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="info-icon-desc">helpdesk@thecrown.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>Copyright &copy; 2022 - The Crown</footer>
+</body>
 </html>
