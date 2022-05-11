@@ -5,8 +5,9 @@
     --primary : #070915;
     --secondary : #262734;
     --accent : #C6D8FF;
+    --form-field : rgb(28, 30, 38, 0.5);
     --c1 : red;
-    --c2 : rgb(28, 30, 38, 0.5); /*DO NOT REMOVE*/
+    --c2 : green;
     --c3 : orange;
     --c4 : pink;
 
@@ -197,23 +198,6 @@ body {
     color: var(--accent);
 }
 
-#about {
-    /* background-color: var(--c1); */
-    /* height: 150vh; */
-    /* position: relative; */
-    /* padding-top: 50%; */
-    /* margin-top: calc(100vh - 70%); */
-    
-}
-
-/* #about-below {
-    width: 100%;
-    height: 50%;
-    background-color: var(--accent);
-    position: absolute;
-    bottom: 0;
-
-} */
 #about1 {
     /* padding-top: 10%; */
     /* padding-top: 15vh; */
@@ -266,74 +250,6 @@ body {
     .div5 { grid-area: 2 / 2 / 3 / 3; 
         z-index: 2;
         background: url('img/img\ \(5\).png') center/cover;}
-
-/* #about-content {
-    margin-top: 90px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0 80px;
-}
-
-.about-info {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin: 30px 0;
-    color: var(--accent);
-    /* height: 30%; 
-}
-
-.about-info:nth-child(2) {
-    flex-direction: row-reverse;
-}
-
-.about-info:last-child {
-    color: var(--secondary);
-}
-
-.about-img , .about-desc{
-    z-index: 2;
-}
-
-.about-img img{
-    z-index: 2;
-    width: 500px;
-    height: 250px;
-    /* object-fit: contain; */
-    /* background: url("../img/img (1).png"); */
-    /* height: 100px;
-    width: 100px; 
-
-}
-
-.about-desc {
-    padding-left: 50px;
-}
-
-.about-info:nth-child(2) .about-desc {
-    padding-left: 0;
-    padding-right: 50px;
-}
-
-.about-info:nth-child(2) .about-desc-content {
-    color: var(--secondary);
-}
-
-.about-desc-header {
-    font-size: 25px;
-    font-family: var(--header-font);
-}
-
-.about-desc-content {
-    /* font-size: 17px;  
-    margin-top: 19px;
-} */
-
-
-
 
 
 #contact {
@@ -416,7 +332,7 @@ input, textarea , .btn{
     width: 100% !important;
     padding: 16px 10px;
     margin-bottom: 5px;
-    background-color: var(--c2);
+    background-color: var(--form-field);
     border: none;
     border-radius: 4px;
     color: var(--accent);
