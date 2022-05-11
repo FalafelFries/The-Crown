@@ -11,8 +11,8 @@
     --c3 : orange;
     --c4 : pink;
 
-    --header-font : 'Cardo', serif;
-    --body-font : 'Noto Sans Display', sans-serif;
+    --font : 'Cardo', serif;
+    --form-font : 'Noto Sans Display', sans-serif;
 }
 
 * {
@@ -22,13 +22,12 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: var(--font);
     background-color: var(--primary);
     color: var(--accent);
 }
 
 .nav-container {
-    font-family: var(--header-font);
     z-index: 4;
     position: fixed;
     /* top:0; */
@@ -130,7 +129,6 @@ body {
 
 #main_heading, #tagline {
     color: var(--accent);
-    font-family: var(--header-font);
 
     /* text-align: center; */
     /* padding: 0 5vw; */
@@ -184,7 +182,6 @@ body {
 .icon-desc {
     color: var(--secondary);
     text-align: center;
-    font-family: var(--header-font);
 
     /* height: 40%;
     font-size: 2.5vh; */
@@ -222,7 +219,6 @@ body {
 
     height: 70vh;
     text-align: center;
-    font-family: var(--header-font);
     }
     
     .div1 { grid-area: 1 / 3 / 3 / 4; 
@@ -271,7 +267,6 @@ body {
 }
 
 #header-text {
-    font-family: var(--header-font);
     text-transform: capitalize;
     font-size: 45px;
     font-weight: 400;
@@ -325,9 +320,11 @@ form {
     /* height: 48px; */
     /* background-color: orange; */
     padding: 5px;
+    
 }
 
 input, textarea , .btn{
+    font-family: var(--form-font) !important;
     height: 45px;
     width: 100% !important;
     padding: 16px 10px;
@@ -336,7 +333,6 @@ input, textarea , .btn{
     border: none;
     border-radius: 4px;
     color: var(--accent);
-    font-family: var(--body-font);
 }
 
 textarea {
@@ -344,12 +340,19 @@ textarea {
     resize: none;
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #21222d inset !important;
+    -webkit-text-fill-color: var(--accent) !important;
+}
+
+
 input:focus, textarea:focus {
     outline: 0; 
 }
 
 .btn {
-    font-family: var(--header-font);
     line-height: 0.8;
     margin-bottom: none !important;
     background-color: var(--accent);
@@ -357,6 +360,7 @@ input:focus, textarea:focus {
     width: fit-content !important;
     float: right;
     cursor: pointer;
+    font-family: var(--font) !important;
 }
 
 #contact-map {
@@ -377,7 +381,6 @@ iframe {
 }
 
 #info-container {
-    font-family: var(--header-font);
     margin-top: 15px;
     display: flex;
     flex-direction: column;
@@ -412,7 +415,6 @@ footer {
     /* background-color: var(--c1); */
     text-align: center;
     color: var(--accent);
-    font-family: var(--header-font);
     height: 100px;
     display: flex;
     align-items: center;
