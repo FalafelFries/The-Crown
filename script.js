@@ -9,7 +9,10 @@ homeSection = document.querySelector('#home')
 aboutSection = document.querySelector('#about1')
 contactSection = document.querySelector('#contact')
 
-navHeight = navigation.offsetHeight+'px'
+// navHeight = navigation.offsetHeight+'px'
+// console.log(navHeight);
+
+
 const menuToggle= document.querySelector(".menu-bars")
 const nav = document.querySelector("nav ul");
 const menuCheckbox = document.querySelector('input[name="menu-toggle-check"]');
@@ -17,7 +20,7 @@ const menuCheckbox = document.querySelector('input[name="menu-toggle-check"]');
 menuToggle.addEventListener("click", () => {
     // console.log(menuCheckbox.checked);
     nav.classList.toggle("slide")
-    nav.style.top = navHeight
+    nav.style.top = navigation.offsetHeight+'px'
     menuLinks.forEach(link => {
         // console.log(link);
         link.addEventListener("click", () => {
